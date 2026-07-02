@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affective Computing Group — Vanderbilt University</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span class="nav-main">Affective Computing Group</span>
+    <span class="nav-sub">Vanderbilt University</span>
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-kicker">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">College of Connected Computing</span>
+      </div>
+      <h1>Understanding how <em>emotions</em> shape human–machine interaction</h1>
+      <p class="hero-desc">We build systems that recognize, model, and respond to human affect — bridging cognitive science, AI, and social simulation.</p>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-bottom-inner">
+        <div class="hero-meta-strip">
+          <div class="meta-row">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <span class="meta-label">Institution</span>
+              <span class="meta-val">Vanderbilt University</span>
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <span class="meta-label">College</span>
+              <span class="meta-val">College of Connected Computing</span>
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <span class="meta-label">Principal Investigator</span>
+              <span class="meta-val">Jonathan Gratch</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-grid">
+          <div class="ph ph-main" id="slideshow">
+            <img src="assets/img/ACII-2024.jpg" alt="Lab photo">
+            <div class="slide-dots" id="slide-dots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pw">
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">About the Lab</h2></div>
+      <p class="about-text">The Affective Computing Group at Vanderbilt University investigates how emotional and social intelligence can be modeled computationally and embedded in interactive systems. Our work spans virtual humans, negotiation agents, and affective interfaces — with applications in training, therapy, and education.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">News</h2></div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">Aug 2026</span>
+          <span class="news-txt">The Affective Computing Group officially launches at Vanderbilt University's College of Connected Computing!</span>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="f-l">© 2025 <strong>Affective Computing Group</strong> · Vanderbilt University</span>
+    <span class="f-r">College of Connected Computing</span>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    const show = document.getElementById('slideshow');
+    if (!show) return;
+    const imgs = show.querySelectorAll('img');
+    if (imgs.length <= 1) { if(imgs[0]) imgs[0].classList.add('slide-active'); return; }
+    const dotsEl = document.getElementById('slide-dots');
+    let cur = 0;
+
+    imgs.forEach((_, i) => {
+      const d = document.createElement('span');
+      d.className = 'slide-dot' + (i === 0 ? ' active' : '');
+      d.onclick = () => go(i);
+      dotsEl.appendChild(d);
+    });
+
+    function go(n) {
+      imgs[cur].classList.remove('slide-active');
+      dotsEl.children[cur].classList.remove('active');
+      cur = n;
+      imgs[cur].classList.add('slide-active');
+      dotsEl.children[cur].classList.add('active');
+    }
+
+    imgs[0].classList.add('slide-active');
+    setInterval(() => go((cur + 1) % imgs.length), 4000);
+  })();
+</script>
+<script>
+  document.getElementById("nav-toggle").addEventListener("click", function() {
+    this.classList.toggle("open");
+    document.getElementById("nav-links").classList.toggle("open");
+  });
+</script>
+</body>
+</html>
