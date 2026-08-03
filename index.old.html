@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Gratch</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span class="nav-main">Jonathan Gratch</span>
+    <span class="nav-sub">Vanderbilt University</span>
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="lab/index.html">Lab</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-kicker">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">College of Connected Computing</span>
+      </div>
+      <h1>Understanding how <em>emotions</em> shape human–machine interaction</h1>
+      <p class="hero-desc">Research Professor · Director, Affective Computing Group, Vanderbilt University</p>
+    </div>
+  </div>
+
+  <div class="pw">
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">About</h2></div>
+      <div class="pi-card">
+        <div class="av">
+          <img src="assets/img/Jon-temp.jpg" alt="Jonathan Gratch">
+        </div>
+        <div>
+          <div class="pi-name">Jonathan Gratch</div>
+          <div class="pi-role">Research Professor · Director, Affective Computing Group</div>
+          <p class="pi-bio">Jonathan Gratch is a Research Professor at Vanderbilt University's College of Connected Computing, where he directs the Affective Computing Group. His research examines the interplay of emotion, cognition, and social behavior, developing computational models that power virtual humans capable of emotionally intelligent interaction. His work spans affective computing, cognitive modeling, human-computer interaction, virtual humans, and persuasive technology, with applications in negotiation, therapy, and training. He was previously Director for Virtual Human Research at the USC Institute for Creative Technologies.</p>
+          <div class="pi-lnks">
+            <a href="https://scholar.google.com/citations?user=HF448PMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+            <a href="https://people.ict.usc.edu/~gratch/Vita.pdf" target="_blank">Vita</a>
+            <a href="https://people.ict.usc.edu/~gratch/" target="_blank">Former USC Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">Contact</h2></div>
+      <div class="c-grid">
+        <div class="c-blk">
+          <div class="c-lbl">Email</div>
+          <p><a href="mailto:jonathan.gratch@vanderbilt.edu">jonathan.gratch@vanderbilt.edu</a></p>
+        </div>
+        <div class="c-blk">
+          <div class="c-lbl">Location</div>
+          <p>Vanderbilt University<br>College of Connected Computing<br>Nashville, TN</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="lab-cta">
+        <div>
+          <div class="lab-cta-t">Affective Computing Group</div>
+          <div class="lab-cta-d">Visit the lab site for research, people, publications, and resources.</div>
+        </div>
+        <a class="lab-cta-btn" href="lab/index.html">Visit the Lab →</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="f-l">© 2026 <strong>Jonathan Gratch</strong></span>
+    <span class="f-r">Vanderbilt University</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("nav-toggle").addEventListener("click", function() {
+    this.classList.toggle("open");
+    document.getElementById("nav-links").classList.toggle("open");
+  });
+</script>
+</body>
+</html>
