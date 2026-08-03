@@ -22,6 +22,17 @@
     border-radius: 8px;
     flex-shrink: 0;
   }
+  .topic-pubs {
+  margin: 10px 0 0 20px;    /* indent from paragraph */
+  padding-left: 18px;       /* move bullets to the right */
+  font-size: 0.90em;        /* slightly smaller text */
+  color: #555;
+  line-height: 1.4;
+}
+
+.topic-pubs li {
+  margin-bottom: 4px;
+}
   @media (max-width: 700px) {
     .topic { flex-direction: column; }
     .topic-img { width: 100%; max-width: 100%; }
@@ -84,13 +95,13 @@
       <div class="topic">
         <div class="topic-txt">
           <h3>Emotion as the Foundation of Social Intelligence</h3>
-          <p><b></b>Emotion is not an add-on to intelligence — it is a computational mechanism that helps agents prepare for action in 
-            complex, uncertain worlds and helps people interpret and shape each other in social interaction</p></b>. Building on 
+          <p><b></b>Emotion is not an add-on to intelligence — it is a mechanism that preparesfor action in 
+            complex, uncertain worlds and coordinates social interaction with human users</p></b>. Building on 
             appraisal theory, my research models how emotion organizes decision making, coping, and action selection. Building 
             on reverse appraisal theory, it also studies how emotional expressions influence the beliefs, trust, and decisions 
             of interaction partners. Recent work suggests that appraisal-based representations also emerge in large language 
             models, reinforcing the relevance of these theories for modern AI.</p>
-          <ul>
+          <ul class=""topic-pubs">
             <li>A Domain-independent Framework for Modeling Emotion (2004)</li>
             <li>Social Functions of Machine Emotional Expressions (2023)</li>
             <li>Mechanistic interpretability of emotion inference in large language models (2025)</li>
