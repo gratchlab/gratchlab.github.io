@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jonathan Gratch — About</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <span class="nav-main">Jonathan Gratch</span>
+    <span class="nav-sub">Vanderbilt University</span>
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lab/index.html">Lab</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-kicker">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">College of Connected Computing</span>
+      </div>
+      <h1>Modeling <em>emotion</em>, cognition, and social behavior</h1>
+      <p class="hero-desc">Research Professor · Director, Affective Computing Group, Vanderbilt University</p>
+    </div>
+  </div>
+
+  <div class="pw">
+
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">About</h2></div>
+      <div class="pi-card">
+        <div class="av">
+          <img src="assets/img/Jon-temp.jpg" alt="Jonathan Gratch">
+        </div>
+        <div>
+          <div class="pi-name">Jonathan Gratch</div>
+          <div class="pi-role">Research Professor · Director, Affective Computing Group</div>
+          <p class="pi-bio">Jonathan Gratch is a Research Professor at Vanderbilt University's College of Connected Computing, where he directs the Affective Computing Group. His research develops human-like software agents for virtual training, therapy, and education environments, and uses these computational methods to give concrete, testable form to psychological theories of human behavior. He studies how algorithms can drive the behavior of characters in virtual worlds, giving them the ability to reason about and engage in socio-emotional interaction with people through both verbal and nonverbal communication. Before joining Vanderbilt, he was Director for Virtual Human Research at the USC Institute for Creative Technologies and Director of the USC Affective Computing Group. He is actively recruiting PhD students at Vanderbilt.</p>
+          <div class="pi-lnks">
+            <a href="https://scholar.google.com/citations?user=HF448PMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+            <a href="https://people.ict.usc.edu/~gratch/Vita.pdf" target="_blank">Vita</a>
+            <a href="https://people.ict.usc.edu/~gratch/public_html/pubs.html" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">Research Interests</h2></div>
+      <p>Affective computing, cognitive modeling, human-computer interaction, virtual humans, and persuasive technology. Across these areas, the throughline is the same: building working computational models of psychological theory, so that ideas about how people think, feel, and interact can be instantiated, systematically manipulated, and empirically tested — not just described.</p>
+
+      <h3>Emotion Modeling</h3>
+      <p>Emotions shape how we perceive the world, how we make decisions, and how we communicate socially. In virtual training environments, they also drive believability and the sense of immersion a trainee feels. Turning psychological theories of emotion into working computational models advances the science itself — it forces concreteness, exposes hidden assumptions, and produces dynamic artifacts that can be studied empirically.</p>
+
+      <h3>Virtual Humans</h3>
+      <p>This line of work brings together intelligent tutoring, natural language understanding and generation, interactive narrative, emotion modeling, and immersive graphics and audio to build realistic, compelling training environments populated by synthetic humans that respond emotionally to a trainee's decisions in real time.</p>
+
+      <h3>Social Emotions and Rapport</h3>
+      <p>When people interact, speech prosody, gesture, gaze, posture, and facial expression combine to build a sense of rapport — a factor linked to success in negotiation, psychotherapy, classroom performance, and even susceptibility to hypnosis. This work uses machine vision and prosody analysis to build virtual humans that detect and respond to human gestures, expressions, and emotional cues in real time to establish rapport with a human partner.</p>
+
+      <h3>Anthropomorphism in Human-Machine Interaction</h3>
+      <p>Machines are increasingly designed with human-like qualities, on the assumption that this improves human-machine interaction. But the evidence is mixed: human-like qualities can also produce unintended, disruptive effects, and in some cases emphasizing a system's "machine-ness" rather than downplaying it is what actually improves the interaction.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-hd"><span class="sec-rule"></span><h2 class="sec-t">Contact</h2></div>
+      <div class="c-grid">
+        <div class="c-blk">
+          <div class="c-lbl">Email</div>
+          <p><a href="mailto:jonathan.gratch@vanderbilt.edu">jonathan.gratch@vanderbilt.edu</a></p>
+        </div>
+        <div class="c-blk">
+          <div class="c-lbl">Location</div>
+          <p>Vanderbilt University<br>College of Connected Computing<br>Nashville, TN</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="lab-cta">
+        <div>
+          <div class="lab-cta-t">Affective Computing Group</div>
+          <div class="lab-cta-d">Visit the lab site for research, people, publications, and resources.</div>
+        </div>
+        <a class="lab-cta-btn" href="lab/index.html">Visit the Lab →</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="f-l">© 2026 <strong>Jonathan Gratch</strong></span>
+    <span class="f-r">Vanderbilt University</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("nav-toggle").addEventListener("click", function() {
+  this.classList.toggle("open");
+  document.getElementById("nav-links").classList.toggle("open");
+});
+</script>
+
+</body>
+</html>
